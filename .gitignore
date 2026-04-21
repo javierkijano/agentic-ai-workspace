@@ -1,0 +1,21 @@
+# Agentic Workspace - Git Ignore
+
+# Estado operativo (Mutable)
+runtime/
+dist/
+data/temp_import/
+*.log
+session_registry.jsonl
+
+# Configuración Local (Rutas absolutas)
+# Se recomienda mantener una copia local y no subirla al canon.
+config/paths.yaml
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS
+.DS_Store
+.thumbs
