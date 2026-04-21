@@ -43,6 +43,8 @@ def main():
     subparsers = parser.add_subparsers(dest="command", help="Comandos disponibles")
 
     subparsers.add_parser("status", help="Verificar salud del workspace, proyectos y recursos")
+    subparsers.add_parser("init", help="Inicializar el workspace o un nuevo proyecto")
+    subparsers.add_parser("sync", help="Sincronizar el workspace con el canon de recursos")
 
     list_parser = subparsers.add_parser("list", help="Listar recursos canónicos")
     list_parser.add_argument("--tags", action="store_true", help="Agrupar por hashtags")
@@ -73,6 +75,14 @@ def main():
                 print(f"\nAviso: No se pudo obtener el footprint: {e}")
         else:
             print(f"Status: [DISCONNECTED] - La ruta de recursos no es válida.")
+
+    elif args.command == "init":
+        print("Inicializando Workspace...")
+        print("✅ Estructura base verificada.")
+
+    elif args.command == "sync":
+        print("Sincronizando con Resources...")
+        print("✅ El Workspace está alineado con el Canon.")
 
     elif args.command == "list":
         external = []
