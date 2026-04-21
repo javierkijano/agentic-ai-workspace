@@ -1,12 +1,12 @@
 id: workspace-repo-manager
 kind: skill
 status: active
-description: Local utility to manage the operational workspace, topology, and agent environments.
+description: Local Operational Manager. Handles topology, project visibility, Git worktrees, and day-to-day agent tasks.
 tags:
 - '#operations'
 - '#workspace'
-- '#topology'
-- '#local'
+- '#git-worktrees'
+- '#projects'
 platforms:
 - hermes
 - generic
