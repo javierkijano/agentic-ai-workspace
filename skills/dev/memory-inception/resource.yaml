@@ -1,0 +1,23 @@
+id: memory-inception
+kind: skill
+status: dev
+description: Skill de memoria operativa y evolutiva basada en grafo relacional y metaconceptos.
+
+interfaces:
+  cli:
+    enabled: true
+    commands:
+      remember: interfaces/remember.py
+      recall: interfaces/recall.py
+      inspect: interfaces/inspect.py
+      bootstrap: interfaces/bootstrap.py
+
+storage:
+  standard_layout: true
+  description: "Almacena la base de datos local SQLite del grafo de nodos"
+
+dependencies:
+  skills:
+    - id: cortex-evaluator
+      type: soft
+      reason: "Para interpretación avanzada y extracción semántica por LM"
