@@ -1,0 +1,11 @@
+# Configuración de Rutas del Ecosistema
+# Este archivo define cómo se resuelven los placeholders en este entorno local.
+
+variables:
+  AGENTIC_RESOURCES: /home/jq-hermes-01/git-repositories/own/agentic-ai-resources
+
+# Rutas operativas calculadas
+paths:
+  runtime: ../runtime
+  dist: ../dist
+  data: ../data

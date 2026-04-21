@@ -1,0 +1,3 @@
+[2026-04-21T01:55:38.089881] OP: validate_repo | STATUS: SECURITY_ALERT | DETAILS: Found 3 risks
+[2026-04-21T01:55:38.098454] OP: validate_repo | STATUS: INFO | DETAILS: Hygiene suggestions: 1
+[2026-04-21T01:55:38.099424] OP: validate_repo | STATUS: FAILURE | DETAILS: Validation failed

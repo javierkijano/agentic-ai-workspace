@@ -1,0 +1,38 @@
+workspace:
+  id: default-local-workspace
+  owner: jq-hermes-01
+  description: Entorno operativo principal en máquina Linux.
+
+links:
+  resources:
+    path: /home/jq-hermes-01/git-repositories/own/agentic-ai-resources
+    role: canonical-source
+  
+  worktrees:
+    hermes: /home/jq-hermes-01/hermes-workspace/agentic-ai
+
+# Proyectos: Ciudadanos de primera clase del ecosistema
+projects:
+  - id: chispas-web
+    path: /home/jq-hermes-01/chispas-web
+    role: frontend-app
+    description: Portal web principal del proyecto Chispas.
+  - id: news-intel-app
+    path: /home/jq-hermes-01/news-intel-app
+    role: intel-service
+    description: Aplicación de inteligencia de noticias.
+  - id: kids-ideas
+    path: /home/jq-hermes-01/kids-ideas-landing.html
+    role: documentation
+    description: Landing page y prototipos de Kids Ideas.
+
+storage:
+  runtime: ./runtime
+  dist: ./dist
+  data: ./data
+
+agents_active:
+  - id: hermes
+    profile: developer
+  - id: gemini-cli
+    profile: orchestrator

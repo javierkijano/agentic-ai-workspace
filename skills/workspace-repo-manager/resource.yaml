@@ -1,0 +1,37 @@
+id: workspace-repo-manager
+kind: skill
+status: active
+description: Local utility to manage the operational workspace, topology, and agent environments.
+tags:
+- '#operations'
+- '#workspace'
+- '#topology'
+- '#local'
+platforms:
+- hermes
+- generic
+interfaces:
+  cli:
+    enabled: true
+    commands:
+      status: core/scripts/navigator.py status
+      init: core/scripts/navigator.py init
+      task: core/scripts/task.py
+      agent: core/scripts/console.py
+      sync: core/scripts/navigator.py sync
+      describe: core/scripts/describe_changes.py
+storage:
+  standard_layout: true
+  description: Local operational storage
+  contract: core/docs/STORAGE.md
+dependencies:
+  system:
+  - id: python
+    version: '>=3.10'
+  local_config:
+  - path: config/paths.yaml
+  - path: config/topology.yaml
+usage_guidelines:
+  constraints:
+  - Only for local operational tasks.
+  - Must not modify logic inside agentic-ai-resources directly.

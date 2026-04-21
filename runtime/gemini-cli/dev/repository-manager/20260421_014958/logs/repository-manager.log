@@ -1,0 +1,2 @@
+[2026-04-21T01:49:58.580568] OP: validate_repo | STATUS: SECURITY_ALERT | DETAILS: Found 9 risks
+[2026-04-21T01:49:58.586973] OP: validate_repo | STATUS: FAILURE | DETAILS: Validation failed
